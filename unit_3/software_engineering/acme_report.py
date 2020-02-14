@@ -8,7 +8,7 @@ from acme import Product
 
 
 ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
-NOUNS = ['Anvil', 'Catapult', 'Explosive tennis balls', 'Mousetrap', 'Rocket sled', 'Bat-man suit']
+NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', 'Rocket']
 
 
 def generate_products(num_products=30):
