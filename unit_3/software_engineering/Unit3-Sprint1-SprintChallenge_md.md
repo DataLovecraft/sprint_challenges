@@ -98,7 +98,7 @@ Make a subclass of `Product` named `BoxingGlove` that does the following:
 - Add a `punch` method that returns "That tickles." if the weight is below 5,
   "Hey that hurt!" if the weight is greater or equal to 5 but less than 15, and
   "OUCH!" otherwise
-  
+
 Example test run:
 
 ```python
@@ -178,7 +178,7 @@ The last lines let you test by running `python acme_report.py`. You should see
 output like:
 
 ```
-$ python acme_report.py 
+$ python acme_report.py
 ACME CORPORATION OFFICIAL INVENTORY REPORT
 Unique product names: 19
 Average price: 56.8
@@ -215,7 +215,7 @@ if __name__ == '__main__':
 
 If you run the tests you should see output like:
 ```
-$ python acme_test.py 
+$ python acme_test.py
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.000s
@@ -234,7 +234,7 @@ Complete the following:
   length 30, and `test_legal_names` which checks that the generated names for a
   default batch of products are all valid possible names to generate (adjective,
   space, noun, from the lists of possible words)
-  
+
 *Hint* - `test_legal_names` is the trickiest of these, but may not be as bad as
 you think. Check out `assertIn` from `unittest`, and remember that Python is
 pretty handy at string processing. But if you get stuck, move on and revisit.
@@ -264,10 +264,32 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+```
+Code review is the most commonly used procedure for validating the design and
+implementation of features. It helps developers to maintain consistency between
+design and implementation “styles” across many team members and between
+various projects on which the company is working.
+
+We should look for things such as:
+ - Are there any obvious logic errors in the code?
+ - Looking at the requirements, are all cases fully implemented?
+ - Are the new automated tests sufficient for the new code?
+   Do existing automated tests need to be rewritten to account for changes in the code?
+ - Does the new code conform to existing style guidelines?
+
+I for one look for consistency when reviewing and receiving a review. I want to know,
+besides all the above, but if I am adding technical debt to the process. Code reviews,
+I think, are a fundamental way software engineers can improve their code.  
+
+```
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+```
+Containers offer a logical packaging mechanism in which applications can be abstracted from the environment in which they actually run. This decoupling allows container-based applications to be deployed easily and consistently, regardless of whether the target environment is a private data center, the public cloud, or even a developer’s personal laptop. Containerization provides a clean separation of concerns, as developers focus on their application logic and dependencies.
 
+Containerization allows the development teams to move fast, deploy software efficiently, and operate at an unprecedented scale.
+```
 Answer both of these questions (baseline ~5 sentences) here in text.
 
 ### Part 8 - Turn it in!
