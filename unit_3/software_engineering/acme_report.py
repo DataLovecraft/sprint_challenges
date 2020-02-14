@@ -1,15 +1,20 @@
-"""Utilities to make and report data on Acme products."""
+#!/usr/bin/env python
 
+'''
+Utility functions to make and report data on Acme products
+'''
 from random import randint, sample, uniform
 from acme import Product
 
 
 ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
-NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
+NOUNS = ['Anvil', 'Catapult', 'Explosive tennis balls', 'Mousetrap', 'Rocket sled', 'Bat-man suit']
 
 
 def generate_products(num_products=30):
-    """Making things the Acme way - randomly!"""
+    '''
+    Generates random Acme products
+    '''
     products = []
     for _ in range(num_products):
         name = sample(ADJECTIVES, 1)[0] + ' ' + sample(NOUNS, 1)[0]
@@ -22,8 +27,9 @@ def generate_products(num_products=30):
 
 
 def inventory_report(products):
-    """Take a list of products, and print a useful summary."""
-    # We'll use a set to track unique names, and total others to average
+    '''
+    Takes a list of products and prints out a summary
+    '''
     names = set()
     total_price = 0
     total_weight = 0
