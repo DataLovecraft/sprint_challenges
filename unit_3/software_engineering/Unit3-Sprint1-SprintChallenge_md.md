@@ -286,9 +286,15 @@ I think, are a fundamental way software engineers can improve their code.
   slightly different things running on all of them. How could containers help us
   improve this situation?
 ```
-Containers offer a logical packaging mechanism in which applications can be abstracted from the environment in which they actually run. This decoupling allows container-based applications to be deployed easily and consistently, regardless of whether the target environment is a private data center, the public cloud, or even a developer’s personal laptop. Containerization provides a clean separation of concerns, as developers focus on their application logic and dependencies.
+Containers offer a logical packaging mechanism in which applications can be abstracted
+from the environment in which they actually run. This decoupling allows container-based
+applications to be deployed easily and consistently, regardless of whether the target
+environment is a private data center, the public cloud, or even a developer’s personal
+laptop. Containerization provides a clean separation of concerns, as developers
+focus on their application logic and dependencies.
 
-Containerization allows the development teams to move fast, deploy software efficiently, and operate at an unprecedented scale.
+Containerization allows the development teams to move fast, deploy software efficiently,
+and operate at an unprecedented scale.
 ```
 Answer both of these questions (baseline ~5 sentences) here in text.
 
