@@ -34,8 +34,8 @@ following fields (variables that live "inside" the class):
 - `price` (integer with default value 10)
 - `weight` (integer with default value 20)
 - `flammability` (float with default value 0.5)
-- `identifier` (integer, automatically genererated as a random (uniform) number
-  anywhere from 1000000 to 9999999, includisve)(inclusive).
+- `identifier` (integer, automatically generated as a random (uniform) number
+  anywhere from 1000000 to 9999999(inclusive).
 
 Write a Python `class` to model the above data. Make sure you are *precise* in
 your field names and types, and that your class has an `__init__` constructor
@@ -144,8 +144,6 @@ For the report, you should calculate and print the following values:
 
 - Number of unique product names in the product list
 - Average (mean) price, weight, and flammability of listed products
-
-At the bottom of `acme_report.py` you should put the following code:
 
 Following is useful starting code for `acme_repory.py`:
 

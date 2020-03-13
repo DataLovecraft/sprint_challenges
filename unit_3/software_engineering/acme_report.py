@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-Utility functions to make and report data on Acme products
+Utility functions to make and report data on Acme products.
 '''
 from random import randint, sample, uniform
 from acme import Product
@@ -25,6 +25,16 @@ def generate_products(num_products=30):
                                 flammability=flammability))
     return products
 
+#    Alternative method:
+#    To DO:
+#    products
+#    for _ in range(num_products):
+#        name = random.choice(ADJECTIVES) + ' ' + rondom.choice(NOUNS)
+#        weight = random.choice(weight)
+#        flammability = random.choice(flammability)
+#        gen_list.append(get_flamm_rand())
+#        products.append(naem, price=price, weight-weight, flammability=flammability)
+#    return products
 
 def inventory_report(products):
     '''

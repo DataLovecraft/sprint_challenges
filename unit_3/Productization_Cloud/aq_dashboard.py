@@ -50,7 +50,7 @@ def refresh():
 
 @APP.route('/')
 def root():
-    """Base view."""
+    """Base view, returns list of "potentially risky" air qualities."""
     return render_template('base.html')
 
 @APP.route('/la-us')

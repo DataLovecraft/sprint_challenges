@@ -41,7 +41,7 @@ class AcmeReportTests(unittest.TestCase):
         self.assertEqual(products_len, 30)
 
     def test_legal_names(self):
-        """Check that all products have valid possible names."""
+        '''Check that all products have valid possible names.'''
         for product in generate_products():
             adjective, noun = product.name.split(" ")
             self.assertIn(adjective, ADJECTIVES)
