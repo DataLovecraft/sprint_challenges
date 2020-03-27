@@ -11,6 +11,9 @@ flask-sqlalchemy = "*"
 requests = "*"
 py-openaq = "*"
 python-dateutil = "*"
+gunicorn = "*"
+python-dotenv = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.8"
