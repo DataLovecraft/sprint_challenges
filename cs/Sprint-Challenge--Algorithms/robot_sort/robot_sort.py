@@ -96,14 +96,14 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        
-        # bubble sort
-        
+
+        # Insertion
+
         self.swap_item()
-        while True: # 
-            # checks adjacent array
+        while True: #
+            # more right and find smallest item that has not been sorted
             while self.move_right():
-                # conditions for array: none, 1, or -1 
+                # conditions for array: none, 1, or -1
                 if self.compare_item() is None:
                     # swap
                     self.swap_item()
@@ -111,28 +111,29 @@ class SortingRobot:
                     # if greater, swap and move left
                     self.swap_item()
                     self.move_left()
-                    self.set_light_on() # 'pick up'
+                    self.set_light_on()
                 elif self.compare_item() == -1:
                     # if less move left
                     self.move_left()
                 else:
                     self.move_left()
-                                
-                self.move_right()
 
+                self.move_right()
+            # place the current item down in the list and turn light off
+            # to indicate the list is   sorted
             while self.compare_item() is not None:
                 self.move_left()
-            if(self.light_is_on()): # 'pick up'?
+            if(self.light_is_on()):
                 self.swap_item()
                 self.move_right()
                 self.swap_item()
-                self.set_light_off() # 'drop'
+                self.set_light_off() # list sorted
             else:
                 self.swap_item()
-                break  # 
-            
+                break  # ends the loop
 
-       
+
+
 
 
 if __name__ == "__main__":
