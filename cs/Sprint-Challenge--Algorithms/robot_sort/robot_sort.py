@@ -120,7 +120,7 @@ class SortingRobot:
 
                 self.move_right()
             # place the current item down in the list and turn light off
-            # to indicate the list is   sorted
+            # to indicate the list is sorted
             while self.compare_item() is not None:
                 self.move_left()
             if(self.light_is_on()):
