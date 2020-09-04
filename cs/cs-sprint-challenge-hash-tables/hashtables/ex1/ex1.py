@@ -13,7 +13,7 @@ def get_indices_of_item_weights(weights: List[int], length: int, limit: int) -> 
         Tuple: int
 
     """
-    # local var to init a empty python dict:
+    # init empty python dict:
     cache = {}
 
     # iterate through list: 0(n)

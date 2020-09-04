@@ -27,7 +27,7 @@ def reconstruct_trip(tickets: List[int], length: int) -> List[int]:
     # key and destination as the value:
     for ticket in range(length):
         # if current ticket source is 'NONE',
-        if tickets[ticket].source == "None":
+        if tickets[ticket].source == "NONE":
             # add destination to route instance:
             route[0] = tickets[ticket].destination
         # We hash each ticket such that the starting location

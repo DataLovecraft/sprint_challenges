@@ -24,7 +24,7 @@ def intersection(arrays: List[List[int]]) -> List[int]:
     for key in cache:
         if cache[key] == len(arrays):
             result.append(key)  # and append them to our results list
-
+    # return results
     return result
 
 
